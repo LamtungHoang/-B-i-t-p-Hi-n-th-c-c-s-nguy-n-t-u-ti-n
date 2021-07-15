@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let count = 0;
+    let i = 2;
+
+    while (count < 20){
+        if(isSNT(i)){
+            document.write(i + ' ');
+            count++;
+        }
+        i++
+    }
+    function isSNT(number){
+        for(let a =2; a < number; a++){
+            if (number %a ===0){
+                return false;
+            }
+        }
+        return true;
+    }
+</script>
+</body>
+</html>
